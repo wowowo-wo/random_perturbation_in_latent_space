@@ -5,7 +5,11 @@ you can see nonlinear and random transformation of the original image.
 
 example:
 
+1
+
 <img src ="ex/ex1.jpg" width="1000">
+
+2
 
 <img src ="ex/ex2.jpg" width="1000">
 
