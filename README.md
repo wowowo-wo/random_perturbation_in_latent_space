@@ -50,6 +50,13 @@ default: Pixel values are clamped to the [0, 1] range, so the output image alway
 experimental: Disables clamping — so you can see raw pixel values, even if they go outside [0, 1].
 This is useful for debugging, visualizing outliers, or inspecting the effects of things like latent space transforms or added noise.
 
+In contrast to the images at the beginning of this README, which are generated in default mode, you can see "collapsed" images like the ones below when using experimental mode.
+
+
+<img src ="ex/ex3.jpg" width="700">
+
+<img src ="ex/ex4.jpg" width="700">
+
 
 ## requirements
 
