@@ -7,9 +7,9 @@ example:
 
 1
 
-<img src ="ex/ex1.jpg" width="1000">
+<img src ="ex/ex1.jpg" width="700">
 
 2
 
-<img src ="ex/ex2.jpg" width="1000">
+<img src ="ex/ex2.jpg" width="700">
 
