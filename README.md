@@ -15,7 +15,7 @@ clone this repo and install the requirements:
 git clone https://github.com/wowowo-wo/random_perturbation_in_latent_space
 cd random_perturbation_in_latent_space
 pip install -r requirements.txt
-python3 cli.py --img_path PATH [--matrix_type type of matrix] [--steps N] [--lb lower bound for uniform float] [--ub upper bound for uniform float] [--density density for sparse float] [--p degrees of freedom for wishart N] [--seed random seed N]
+python3 cli.py --img_path PATH [--matrix_type type of matrix] [--n N] [--lb lower bound for uniform float] [--ub upper bound for uniform float] [--density density for sparse float] [--p degrees of freedom for wishart N] [--seed random seed N]
 ```
 
 or you can run this tool with a GUI using Streamlit:
@@ -33,7 +33,7 @@ then, open the URL shown in your brouser.
 
 --matrix_type Type of matrix which operates in latent space. default is gaussian. options includes gaussian, uniform, orthogonal, symmetric, permutation, sparse, diagonal, wishart.
 
---steps Number of steps to repeat the process with different random matricies. default is 1.
+--n Number of steps to repeat the process with different random matricies. default is 1.
 
 --lb Lower bound for values in uniform matricies. default is 0.0
 
