@@ -44,8 +44,10 @@ then, open the URL shown in your brouser.
 --p Degrees of freedom for the wishart matrix. default is C = dimension of a latent vector.
 
 --mode 
-default:Pixel values are clamped to the [0, 1] range, so the output image always looks clean and reasonable.
-experimental:Disables clamping — so you can see raw pixel values, even if they go outside [0, 1].
+
+default: Pixel values are clamped to the [0, 1] range, so the output image always looks clean and reasonable.
+
+experimental: Disables clamping — so you can see raw pixel values, even if they go outside [0, 1].
 This is useful for debugging, visualizing outliers, or inspecting the effects of things like latent space transforms or added noise.
 
 
