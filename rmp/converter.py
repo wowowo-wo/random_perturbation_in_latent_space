@@ -1,4 +1,9 @@
 import torch
+from diffusers.models import AutoencoderKL
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+vae = AutoencoderKL.from_pretrained("stabilityai/sd-vae-ft-mse").to(device)
+vae.eval()
 
 def encode_image(x):
   with torch.no_grad():
