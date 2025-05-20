@@ -1,7 +1,7 @@
 import torch
 from .operator import apply_random_matrix
 from .converter import encode_image, decode_latent
-from .utils import preprocess_image, to_pil
+from .utils import preprocess_image, to_pil, to_pil_experimental
 import argparse
 import os
 
@@ -30,7 +30,12 @@ def main(args):
         os.makedirs(output_dir, exist_ok=True)
         z_tr = apply_random_matrix(z, args.matrix_type, **kwargs)
         img_tensor = decode_latent(z_tr)
-        img_out = to_pil(img_tensor)
+
+        if args.mode == "experimental":
+            img_out = to_pil_experimental(img_tensor)
+        else:
+            img_out = to_pil(img_tensor)
+
         img_out.save(os.path.join(output_dir, f"output_{i}.png"))
 
 def get_parser():
@@ -49,4 +54,5 @@ def get_parser():
     parser.add_argument("--density", type=float, default=0.1, help="density for sparse matrix.")
     parser.add_argument("--p", type=int, help="degrees of freedom for Wishart matrix.")
     parser.add_argument("--seed", type=int, default=None, help="random seed")
+    parser.add_argument("--mode", type=str, default=None, help="if you don't wanna cutoff values of img_tensor, enter 'experimental'.")
     return parser

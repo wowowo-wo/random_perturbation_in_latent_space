@@ -30,8 +30,8 @@ def apply_random_matrix(z, matrix_type, **kwargs):
     A = torch.randn(C, C).to(device) * mask
 
   elif matrix_type == 'diagonal':
-    diag = kwargs.get(torch.randn(C).to(device))
-    A =  torch.diag(diag)
+    diag = torch.randn(C)
+    A =  torch.diag(diag).to(device)
 
   elif matrix_type == "wishart":
     p=kwargs.get('p',C)

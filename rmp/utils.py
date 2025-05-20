@@ -18,6 +18,11 @@ def to_pil(tensor_img):
     img = (img * 0.5 + 0.5).clamp(0, 1)
     return transforms.ToPILImage()(img)
 
+def to_pil_experimental(tensor_img):
+    img = tensor_img.squeeze().cpu()
+    img = (img * 0.5 + 0.5)
+    return transforms.ToPILImage()(img)
+
 def show_image(image):
 
     plt.figure(figsize=(4, 4))
