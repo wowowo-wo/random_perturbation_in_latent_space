@@ -63,3 +63,26 @@ In contrast to the images at the beginning of this README, which are generated i
 ```bash
 pip install -r requirements.txt
 ```
+
+## Takeaway
+
+All the images included in this README were created using this repo - they are
+made by stitching together outputs generated with it.
+
+Whats interesting is that, when I look back on how I made them, the whole process seems to offer one possible answer to the question 'What is the role of humans in the age of AI?'
+
+Concretely, the workflow is the following:
+
+1. Come up with an idea for an image processing concept
+
+2. Write the code(using chatGPT)
+
+3. Run the process over and over, tweaking parameters as needed
+
+4. From about 2000 generated images, pick the ones I liked and combine them into a 3×3 grid
+
+People sometimes say "AI is taking our jobs." But looking at this process, it feels more like the opposite:
+
+Ideas and personal taste are becoming more important than ever.
+
+Perhaps the role of humans in the age of AI is to work effectively with new tochnologies, acting more like an "editor".
