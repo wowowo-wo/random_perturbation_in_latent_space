@@ -58,7 +58,7 @@ In contrast to the images at the beginning of this README, which are generated i
 <img src ="ex/ex4.jpg" width="700">
 
 
-## requirements
+## Requirements
 
 ```bash
 pip install -r requirements.txt
