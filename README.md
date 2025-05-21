@@ -69,7 +69,7 @@ pip install -r requirements.txt
 All the images included in this README were created using this repo - they are
 made by stitching together outputs generated with it.
 
-Whats interesting is that, when I look back on how I made them, the whole process seems to offer one possible answer to the question 'What is the role of humans in the age of AI?'
+Whats interesting is that, looking back on how I made them, the whole process seems to offer one possible answer to the question 'What is the role of humans in the age of AI?'
 
 Concretely, the workflow is the following:
 
