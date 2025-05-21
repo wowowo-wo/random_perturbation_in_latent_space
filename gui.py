@@ -38,6 +38,10 @@ p = st.number_input("Degrees of freedom (for Wishart)", min_value=1, step=1, for
 
 seed = st.number_input("Random seed", value=None, step=1, format="%d")
 
+mode = st.selectbox("mode",
+    ["default","experimental"]
+)
+
 if st.button("Apply transformation") and img_file is not None:
     with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp:
         image = Image.open(img_file)
@@ -52,7 +56,8 @@ if st.button("Apply transformation") and img_file is not None:
         ub=ub,
         density=density,
         p=p,
-        seed=seed if seed != 0 else None
+        seed=seed if seed != 0 else None,
+        mode=mode
     )
     main(args)
 
